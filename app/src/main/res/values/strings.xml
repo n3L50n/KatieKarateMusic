@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">KatieKarateMusic</string>
+    <string name="music_library_label">Katie Karate Music Library</string>
+    <string name="now_playing_label">Now Playing</string>
+    <string name="upload_label">Upload</string>
+    <string name="song_details_label">Song Details</string>
 </resources>
