@@ -17,18 +17,18 @@
         android:text="@string/now_playing_label"/>
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:padding="2dp"
+        android:layout_width="@dimen/play_image_width"
+        android:layout_height="@dimen/play_image_height"
         android:layout_centerInParent="true"
         android:layout_margin="@dimen/song_art_margin"
         android:background="@color/colorPrimaryDark"
         android:contentDescription="@string/song_art_description"
+        android:padding="@dimen/now_playing_image_border"
         android:src="@drawable/nelson_wells_art"/>
 
     <View
-        android:layout_above="@+id/play_controls"
-        style="@style/DividerStyle"/>
+        style="@style/DividerStyle"
+        android:layout_above="@+id/play_controls"/>
 
     <LinearLayout
         android:id="@+id/play_controls"
@@ -39,30 +39,22 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_gravity="center_vertical"
+            style="@style/PlayControlStyle"
             android:background="@drawable/ic_fast_rewind_black_24px"
             android:contentDescription="@string/rewind_button_description"/>
 
         <ImageButton
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_gravity="center_vertical"
+            style="@style/PlayControlStyle"
             android:background="@drawable/ic_pause_black_24px"
             android:contentDescription="@string/pause_button_description"/>
 
         <ImageButton
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_vertical"
+            style="@style/PlayControlStyle"
             android:background="@drawable/ic_play_arrow_black_24px"
             android:contentDescription="@string/play_button_description"/>
 
         <ImageButton
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_gravity="center_vertical"
+            style="@style/PlayControlStyle"
             android:background="@drawable/ic_fast_forward_black_24px"
             android:contentDescription="@string/forward_button_description"/>
     </LinearLayout>

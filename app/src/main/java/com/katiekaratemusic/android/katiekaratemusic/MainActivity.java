@@ -14,6 +14,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /**
+         * Bring user to a Music Library screen where all of the audio can be accessed and played
+         */
         ImageButton libraryButton = (ImageButton) findViewById(R.id.library_button);
         libraryButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -23,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        /**
+         * Bring user to a screen where audio can be uploaded from other sources outside of the app
+         */
         ImageButton uploadButton = (ImageButton) findViewById(R.id.upload_button);
         uploadButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        /**
+         * Bring user to a screen where audio can be recorded
+         */
         ImageButton createButton = (ImageButton) findViewById(R.id.create_button);
         createButton.setOnClickListener(new View.OnClickListener() {
             @Override

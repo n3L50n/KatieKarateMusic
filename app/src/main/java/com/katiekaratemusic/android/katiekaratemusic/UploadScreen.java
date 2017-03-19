@@ -13,6 +13,9 @@ public class UploadScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upload_screen);
 
+        /**
+         * Return user to Main activity from Upload screen
+         */
         ImageButton backButton = (ImageButton) findViewById(R.id.upload_system_back_button);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -22,6 +25,11 @@ public class UploadScreen extends AppCompatActivity {
             }
         });
 
+        /**
+         * Lead user to Library screen. Note, after going to Library screen from upload screen,
+         * then using back button on library screen, user is directed to main screen and not back to upload screen.
+         * This is okay.
+         */
         ImageButton libraryButton = (ImageButton) findViewById(R.id.upload_screen_go_to_library);
         libraryButton.setOnClickListener(new View.OnClickListener() {
             @Override

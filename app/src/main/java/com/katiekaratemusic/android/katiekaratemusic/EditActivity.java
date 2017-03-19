@@ -13,6 +13,9 @@ public class EditActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
 
+        /**
+         * Return user back to Library screen
+         */
         ImageButton backBtn = (ImageButton) findViewById(R.id.edit_song_system_back_button);
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override

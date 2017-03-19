@@ -13,6 +13,9 @@ public class CreateNewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_new);
 
+        /**
+         * Return user from Record screen back to Main screen
+         */
         ImageButton backButton = (ImageButton) findViewById(R.id.create_new_system_back_button);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override

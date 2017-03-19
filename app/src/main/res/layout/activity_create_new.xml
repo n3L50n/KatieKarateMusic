@@ -16,8 +16,8 @@
         android:layout_height="@dimen/spacer_height"/>
 
     <ImageButton
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="@dimen/mic_image_width"
+        android:layout_height="@dimen/mic_image_height"
         android:layout_gravity="center"
         android:background="@drawable/ic_mic_black_24px"/>
 
@@ -35,15 +35,15 @@
         android:hint="@string/song_notes_hint"/>
 
     <ImageButton
+        android:layout_width="@dimen/play_control_image_width"
+        android:layout_height="@dimen/play_control_image_height"
         android:layout_gravity="center_horizontal"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
         android:background="@drawable/ic_backup_black_24px"/>
 
     <TextView
-        android:gravity="center_horizontal"
-        android:text="@string/save_to_library"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/save_to_library"/>
 
 </LinearLayout>

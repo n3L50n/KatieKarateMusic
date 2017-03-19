@@ -13,6 +13,9 @@ public class NowPlaying extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_now_playing);
 
+        /**
+         * Return user back to Music library from Now playing screen
+         */
         ImageButton backButton = (ImageButton) findViewById(R.id.now_playing_system_back_button);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -12,14 +12,14 @@
         style="@style/SystemBackButtonStyle"/>
 
     <TextView
-        android:layout_margin="@dimen/label_margin"
-        android:text="@string/upload_original"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/label_margin"
+        android:text="@string/upload_original"/>
 
     <ImageButton
-        android:background="@drawable/ic_file_upload_black_24px"
-        style="@style/LabelImageStyle"/>
+        style="@style/LabelImageStyle"
+        android:background="@drawable/ic_file_upload_black_24px"/>
 
     <TextView
         style="@style/LabelTextStyle"
@@ -31,7 +31,7 @@
         android:background="@drawable/ic_library_music_black_24px"/>
 
     <TextView
-        android:text="@string/go_to_music_library_label"
-        style="@style/LabelTextStyle"/>
+        style="@style/LabelTextStyle"
+        android:text="@string/go_to_music_library_label"/>
 
 </LinearLayout>
