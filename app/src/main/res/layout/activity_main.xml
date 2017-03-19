@@ -9,21 +9,29 @@
     android:padding="@dimen/screen_padding"
     tools:context="com.katiekaratemusic.android.katiekaratemusic.MainActivity">
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacer_height"/>
+
     <ImageButton
+        android:id="@+id/library_button"
         style="@style/LabelImageStyle"
         android:background="@drawable/ic_library_music_black_24px"
         android:contentDescription="@string/library_description"/>
 
     <TextView
+        android:id="@+id/library_text_label"
         style="@style/LabelTextStyle"
         android:text="@string/music_library_label"/>
 
     <ImageButton
+        android:id="@+id/upload_button"
         style="@style/LabelImageStyle"
         android:background="@drawable/ic_file_upload_black_24px"
         android:contentDescription="@string/library_description"/>
 
     <TextView
+        android:id="@+id/upload_text_label"
         style="@style/LabelTextStyle"
         android:text="@string/upload_label"/>
 

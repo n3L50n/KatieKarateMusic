@@ -7,4 +7,9 @@
 
     <!--Content Description-->
     <string name="library_description">Library Icon</string>
+    <string name="play_button_description">Play Icon</string>
+
+    <!--Song Titles-->
+    <string name="talking_song_label">Talking</string>
+
 </resources>
