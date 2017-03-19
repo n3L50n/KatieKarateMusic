@@ -25,10 +25,6 @@
             android:label="@string/music_library_label">
         </activity>
         <activity
-            android:name=".SongDetails"
-            android:label="@string/song_details_label">
-        </activity>
-        <activity
             android:name=".UploadScreen"
             android:label="@string/upload_label">
         </activity>

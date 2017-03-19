@@ -18,6 +18,9 @@
         style="@style/LabelTextStyle"
         android:text="@string/music_library_label"/>
 
+    <View
+        style="@style/DividerStyle"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,16 +29,40 @@
 
         <TextView
             style="@style/MusicItemStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/talking_song_label"/>
 
-        <ImageButton
-            android:id="@+id/talking_song_button"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_play_arrow_black_24px"
-            android:contentDescription="@string/play_button_description"/>
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/talking_song_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_play_arrow_black_24px"
+                android:contentDescription="@string/play_button_description"/>
+
+            <TextView
+                style="@style/EditSongStyle"
+                android:text="@string/play_song"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                style="@style/PlayEditIconStyle"
+                android:background="@drawable/ic_mode_edit_black_24px"/>
+
+            <TextView
+                style="@style/EditSongStyle"
+                android:text="@string/edit_song"/>
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -50,16 +77,41 @@
 
         <TextView
             style="@style/MusicItemStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/battle_song_label"/>
 
-        <ImageButton
-            android:id="@+id/battle_song_button"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_play_arrow_black_24px"
-            android:contentDescription="@string/play_button_description"/>
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/battle_song_button"
+                style="@style/PlayEditIconStyle"
+                android:background="@drawable/ic_play_arrow_black_24px"
+                android:contentDescription="@string/play_button_description"/>
+
+            <TextView
+                style="@style/EditSongStyle"
+                android:text="@string/play_song"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                style="@style/PlayEditIconStyle"
+                android:background="@drawable/ic_mode_edit_black_24px"
+                android:contentDescription="@string/edit_button_description"/>
+
+            <TextView
+                style="@style/EditSongStyle"
+                android:text="@string/edit_song"/>
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
@@ -78,12 +130,38 @@
             android:layout_height="wrap_content"
             android:text="@string/casper_song_label"/>
 
-        <ImageButton
-            android:id="@+id/casper_song_button"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_play_arrow_black_24px"
-            android:contentDescription="@string/play_button_description"/>
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/casper_song_button"
+                style="@style/PlayEditIconStyle"
+                android:background="@drawable/ic_play_arrow_black_24px"
+                android:contentDescription="@string/play_button_description"/>
+
+            <TextView
+                style="@style/EditSongStyle"
+                android:text="@string/play_song"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                style="@style/PlayEditIconStyle"
+                android:background="@drawable/ic_mode_edit_black_24px"/>
+
+            <TextView
+                style="@style/EditSongStyle"
+                android:text="@string/edit_song"/>
+
+        </LinearLayout>
+
 
     </LinearLayout>
 

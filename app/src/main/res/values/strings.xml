@@ -6,6 +6,10 @@
     <string name="song_details_label">Song Details</string>
     <string name="create_label">Create New Recording</string>
     <string name="begin_recording">Begin Recording</string>
+    <string name="song_notes_hint">Enter Song Title</string>
+    <string name="save_to_library">Save to Library</string>
+    <string name="edit_song">Edit Song</string>
+    <string name="play_song">Play Song</string>
 
     <!--Content Description-->
     <string name="library_description">Library Icon</string>
@@ -15,6 +19,7 @@
     <string name="forward_button_description">Fast Forward Icon</string>
     <string name="song_art_description">Pixel art of a backpacker named Nelson Wells</string>
     <string name="back_button_description">System back Icon</string>
+    <string name="edit_button_description">Edit Button Icon</string>
 
     <!--Song Titles-->
     <string name="talking_song_label">Talking</string>

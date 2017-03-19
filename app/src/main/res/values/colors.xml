@@ -6,5 +6,6 @@
 
     <color name="label_text_color">@android:color/darker_gray</color>
     <color name="music_item_text_color">@color/colorPrimaryDark</color>
-
+    <color name="edit_song_text_color">@android:color/darker_gray</color>
+    <color name="now_playing_background">#F6F6F6</color>
 </resources>

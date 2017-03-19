@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/now_playing_background"
     tools:context="com.katiekaratemusic.android.katiekaratemusic.NowPlaying">
 
     <ImageButton
@@ -11,20 +12,26 @@
         style="@style/SystemBackButtonStyle"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/LabelTextStyle"
         android:layout_centerHorizontal="true"
         android:text="@string/now_playing_label"/>
 
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:padding="2dp"
         android:layout_centerInParent="true"
         android:layout_margin="@dimen/song_art_margin"
-        android:background="@drawable/nelson_wells_art"
-        android:contentDescription="@string/song_art_description"/>
+        android:background="@color/colorPrimaryDark"
+        android:contentDescription="@string/song_art_description"
+        android:src="@drawable/nelson_wells_art"/>
+
+    <View
+        android:layout_above="@+id/play_controls"
+        style="@style/DividerStyle"/>
 
     <LinearLayout
+        android:id="@+id/play_controls"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
