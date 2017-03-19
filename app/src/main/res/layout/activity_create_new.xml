@@ -5,16 +5,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.katiekaratemusic.android.katiekaratemusic.NowPlaying">
 
-    <TextView
-        android:text="@string/begin_recording"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacer_height"/>
 
     <ImageButton
+        android:layout_gravity="center"
         android:background="@drawable/ic_mic_black_24px"
         android:layout_width="150dp"
         android:layout_height="150dp"/>
+
+    <TextView
+        style="@style/LabelTextStyle"
+        android:layout_gravity="center"
+        android:text="@string/begin_recording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

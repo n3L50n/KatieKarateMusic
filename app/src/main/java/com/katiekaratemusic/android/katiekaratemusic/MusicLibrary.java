@@ -13,6 +13,15 @@ public class MusicLibrary extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music_library);
 
+        ImageButton backButton = (ImageButton) findViewById(R.id.music_library_system_back_button);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent backButtonIntent = new Intent(MusicLibrary.this, MainActivity.class);
+                startActivity(backButtonIntent);
+            }
+        });
+
         ImageButton talkingSongButton = (ImageButton) findViewById(R.id.talking_song_button);
         talkingSongButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -8,6 +8,21 @@
     android:orientation="vertical"
     tools:context="com.katiekaratemusic.android.katiekaratemusic.MusicLibrary">
 
+    <ImageButton
+        android:id="@+id/music_library_system_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/back_button_margin"
+        android:background="@drawable/ic_arrow_back_black_24px"
+        android:contentDescription="@string/back_button_description"/>
+
+    <View
+        style="@style/DividerStyle"/>
+
+    <TextView
+        android:text="@string/music_library_label"
+        style="@style/LabelTextStyle"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

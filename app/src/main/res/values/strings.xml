@@ -10,9 +10,11 @@
     <!--Content Description-->
     <string name="library_description">Library Icon</string>
     <string name="play_button_description">Play Icon</string>
-    <string name="rewind__button_description">Rewind Icon</string>
+    <string name="rewind_button_description">Rewind Icon</string>
     <string name="pause_button_description">Pause Icon</string>
     <string name="forward_button_description">Fast Forward Icon</string>
+    <string name="song_art_description">Pixel art of a backpacker named Nelson Wells</string>
+    <string name="back_button_description">System back Icon</string>
 
     <!--Song Titles-->
     <string name="talking_song_label">Talking</string>
