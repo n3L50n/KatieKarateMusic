@@ -5,30 +5,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.katiekaratemusic.android.katiekaratemusic.MusicLibrary">
 
-    <TextView
-        style="@style/MusicItemStyle"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/talking_song_label"/>
+        android:orientation="horizontal"
+        android:padding="@dimen/music_item_padding">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_play_arrow_black_24px"
-        android:contentDescription="@string/play_button_description"/>
+        <TextView
+            style="@style/MusicItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/talking_song_label"/>
 
-    <TextView
-        style="@style/MusicItemStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/talking_song_label"/>
+        <ImageButton
+            android:id="@+id/talking_song_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_play_arrow_black_24px"
+            android:contentDescription="@string/play_button_description"/>
 
-    <ImageButton
-        android:layout_width="wrap_content"
+    </LinearLayout>
+
+    <View
+        style="@style/DividerStyle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/ic_play_arrow_black_24px"
-        android:contentDescription="@string/play_button_description"/>
+        android:orientation="horizontal"
+        android:padding="@dimen/music_item_padding">
+
+        <TextView
+            style="@style/MusicItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/battle_song_label"/>
+
+        <ImageButton
+            android:id="@+id/battle_song_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_play_arrow_black_24px"
+            android:contentDescription="@string/play_button_description"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/DividerStyle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/music_item_padding">
+
+        <TextView
+            style="@style/MusicItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/casper_song_label"/>
+
+        <ImageButton
+            android:id="@+id/casper_song_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_play_arrow_black_24px"
+            android:contentDescription="@string/play_button_description"/>
+
+    </LinearLayout>
 
 </LinearLayout>

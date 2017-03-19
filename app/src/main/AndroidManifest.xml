@@ -32,6 +32,8 @@
             android:name=".UploadScreen"
             android:label="@string/upload_label">
         </activity>
+        <activity android:name=".CreateNewActivity">
+        </activity>
     </application>
 
 </manifest>

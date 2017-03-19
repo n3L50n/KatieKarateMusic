@@ -35,4 +35,15 @@
         style="@style/LabelTextStyle"
         android:text="@string/upload_label"/>
 
+    <ImageButton
+        android:id="@+id/create_button"
+        style="@style/LabelImageStyle"
+        android:background="@drawable/ic_mic_black_24px"
+        android:contentDescription="@string/library_description"/>
+
+    <TextView
+        android:id="@+id/create_text_label"
+        style="@style/LabelTextStyle"
+        android:text="@string/create_label"/>
+
 </LinearLayout>

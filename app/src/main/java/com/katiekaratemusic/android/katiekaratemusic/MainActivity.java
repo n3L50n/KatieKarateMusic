@@ -14,15 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageButton uploadButton = (ImageButton) findViewById(R.id.upload_button);
-        uploadButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent uploadIntent = new Intent(MainActivity.this, UploadScreen.class);
-                startActivity(uploadIntent);
-            }
-        });
-
         ImageButton libraryButton = (ImageButton) findViewById(R.id.library_button);
         libraryButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,5 +23,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageButton uploadButton = (ImageButton) findViewById(R.id.upload_button);
+        uploadButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent uploadIntent = new Intent(MainActivity.this, UploadScreen.class);
+                startActivity(uploadIntent);
+            }
+        });
+
+        ImageButton createButton = (ImageButton) findViewById(R.id.create_button);
+        createButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent createIntent = new Intent(MainActivity.this, CreateNewActivity.class);
+                startActivity(createIntent);
+            }
+        });
     }
 }

@@ -4,12 +4,19 @@
     <string name="now_playing_label">Now Playing</string>
     <string name="upload_label">Upload</string>
     <string name="song_details_label">Song Details</string>
+    <string name="create_label">Create New Recording</string>
+    <string name="begin_recording">Begin Recording</string>
 
     <!--Content Description-->
     <string name="library_description">Library Icon</string>
     <string name="play_button_description">Play Icon</string>
+    <string name="rewind__button_description">Rewind Icon</string>
+    <string name="pause_button_description">Pause Icon</string>
+    <string name="forward_button_description">Fast Forward Icon</string>
 
     <!--Song Titles-->
     <string name="talking_song_label">Talking</string>
+    <string name="battle_song_label">Battle Song</string>
+    <string name="casper_song_label">Casper\'s Song</string>
 
 </resources>
