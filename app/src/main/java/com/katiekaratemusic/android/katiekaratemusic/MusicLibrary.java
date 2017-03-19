@@ -48,5 +48,32 @@ public class MusicLibrary extends AppCompatActivity {
                 startActivity(songIntent);
             }
         });
+
+        ImageButton talkingEditButton = (ImageButton) findViewById(R.id.talking_edit_button);
+        talkingEditButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent editIntent = new Intent(MusicLibrary.this, EditActivity.class);
+                startActivity(editIntent);
+            }
+        });
+
+        ImageButton battleEditButton = (ImageButton) findViewById(R.id.battle_edit_button);
+        battleEditButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent editIntent = new Intent(MusicLibrary.this, EditActivity.class);
+                startActivity(editIntent);
+            }
+        });
+
+        ImageButton casperEditButton = (ImageButton) findViewById(R.id.casper_edit_button);
+        casperEditButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent editIntent = new Intent(MusicLibrary.this, EditActivity.class);
+                startActivity(editIntent);
+            }
+        });
     }
 }

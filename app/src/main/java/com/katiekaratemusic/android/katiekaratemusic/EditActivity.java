@@ -6,21 +6,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class CreateNewActivity extends AppCompatActivity {
+public class EditActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_new);
+        setContentView(R.layout.activity_edit);
 
-        ImageButton backButton = (ImageButton) findViewById(R.id.create_new_system_back_button);
-        backButton.setOnClickListener(new View.OnClickListener() {
+        ImageButton backBtn = (ImageButton) findViewById(R.id.edit_song_system_back_button);
+        backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent backIntent = new Intent(CreateNewActivity.this, MainActivity.class);
+                Intent backIntent = new Intent(EditActivity.this, MusicLibrary.class);
                 startActivity(backIntent);
             }
         });
-
     }
+
+
 }

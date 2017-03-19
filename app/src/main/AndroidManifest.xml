@@ -28,7 +28,13 @@
             android:name=".UploadScreen"
             android:label="@string/upload_label">
         </activity>
-        <activity android:name=".CreateNewActivity">
+        <activity
+            android:name=".CreateNewActivity"
+            android:label="@string/begin_recording">
+        </activity>
+        <activity
+            android:name=".EditActivity"
+            android:label="@string/edit_song">
         </activity>
     </application>
 

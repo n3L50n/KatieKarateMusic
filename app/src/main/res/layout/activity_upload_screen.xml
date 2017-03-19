@@ -4,10 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.katiekaratemusic.android.katiekaratemusic.UploadScreen">
+
+    <ImageButton
+        android:id="@+id/upload_system_back_button"
+        style="@style/SystemBackButtonStyle"/>
+
+    <TextView
+        android:layout_margin="@dimen/label_margin"
+        android:text="@string/upload_original"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <ImageButton
         android:background="@drawable/ic_file_upload_black_24px"
         style="@style/LabelImageStyle"/>
+
+    <TextView
+        style="@style/LabelTextStyle"
+        android:text="@string/upload_label"/>
+
+    <ImageButton
+        android:id="@+id/upload_screen_go_to_library"
+        style="@style/LabelImageStyle"
+        android:background="@drawable/ic_library_music_black_24px"/>
+
+    <TextView
+        android:text="@string/go_to_music_library_label"
+        style="@style/LabelTextStyle"/>
 
 </LinearLayout>
