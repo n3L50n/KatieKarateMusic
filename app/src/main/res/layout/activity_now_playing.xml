@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,60 +8,56 @@
 
     <ImageButton
         android:id="@+id/now_playing_system_back_button"
-        android:layout_margin="@dimen/back_button_margin"
-        android:contentDescription="@string/back_button_description"
-        android:background="@drawable/ic_arrow_back_black_24px"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        style="@style/SystemBackButtonStyle"/>
 
     <TextView
-        android:layout_centerHorizontal="true"
-        android:text="@string/now_playing_label"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/now_playing_label"/>
 
     <ImageView
-        android:background="@drawable/nelson_wells_art"
-        android:contentDescription="@string/song_art_description"
-        android:layout_margin="@dimen/song_art_margin"
-        android:layout_centerInParent="true"
         android:layout_width="200dp"
-        android:layout_height="200dp"/>
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/song_art_margin"
+        android:background="@drawable/nelson_wells_art"
+        android:contentDescription="@string/song_art_description"/>
 
     <LinearLayout
-        android:gravity="center_horizontal"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
 
         <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_gravity="center_vertical"
-            android:contentDescription="@string/rewind_button_description"
             android:background="@drawable/ic_fast_rewind_black_24px"
-            android:layout_width="75dp"
-            android:layout_height="75dp"/>
+            android:contentDescription="@string/rewind_button_description"/>
 
         <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_gravity="center_vertical"
-            android:contentDescription="@string/pause_button_description"
             android:background="@drawable/ic_pause_black_24px"
-            android:layout_width="75dp"
-            android:layout_height="75dp"/>
+            android:contentDescription="@string/pause_button_description"/>
 
         <ImageButton
-            android:layout_gravity="center_vertical"
-            android:contentDescription="@string/play_button_description"
-            android:background="@drawable/ic_play_arrow_black_24px"
             android:layout_width="100dp"
-            android:layout_height="100dp"/>
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_play_arrow_black_24px"
+            android:contentDescription="@string/play_button_description"/>
 
         <ImageButton
-            android:layout_gravity="center_vertical"
-            android:contentDescription="@string/forward_button_description"
-            android:background="@drawable/ic_fast_forward_black_24px"
             android:layout_width="75dp"
-            android:layout_height="75dp"/>
+            android:layout_height="75dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_fast_forward_black_24px"
+            android:contentDescription="@string/forward_button_description"/>
     </LinearLayout>
 
 </RelativeLayout>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,18 +9,14 @@
 
     <ImageButton
         android:id="@+id/music_library_system_back_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/back_button_margin"
-        android:background="@drawable/ic_arrow_back_black_24px"
-        android:contentDescription="@string/back_button_description"/>
+        style="@style/SystemBackButtonStyle"/>
 
     <View
         style="@style/DividerStyle"/>
 
     <TextView
-        android:text="@string/music_library_label"
-        style="@style/LabelTextStyle"/>
+        style="@style/LabelTextStyle"
+        android:text="@string/music_library_label"/>
 
     <LinearLayout
         android:layout_width="match_parent"
