@@ -11,9 +11,11 @@
         android:id="@+id/create_new_system_back_button"
         style="@style/SystemBackButtonStyle"/>
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/spacer_height"/>
+    <TextView
+        android:layout_margin="@dimen/music_item_padding"
+        android:text="@string/record_explanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <ImageButton
         android:layout_width="@dimen/mic_image_width"
@@ -45,5 +47,11 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="@string/save_to_library"/>
+
+    <TextView
+        android:padding="@dimen/music_item_padding"
+        android:text="@string/save_to_drive_explanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

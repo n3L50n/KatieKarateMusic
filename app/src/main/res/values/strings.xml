@@ -13,6 +13,9 @@
     <string name="edit_song_explanation">Imagine these sliders can edit different aspects of a song</string>
     <string name="upload_original">Upload your original content from other connected apps or directly from your device</string>
     <string name="go_to_music_library_label">Go to Music Library</string>
+    <string name="now_playing_explanation">Here I would implement the MediaPlayer class to allow audio playback</string>
+    <string name="record_explanation">Here I would implement the AudioRecord class to allow audio recording</string>
+    <string name="save_to_drive_explanation">Here I would implement the Google Drive api to allow saving of audio files to Google Drive</string>
 
     <!--Content Description-->
     <string name="library_description">Library Icon</string>
